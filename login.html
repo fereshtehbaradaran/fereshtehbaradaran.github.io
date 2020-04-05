@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <h1 id="welcome">Welcome,</h1>
+    <div id="loginbox">
+        <div class="title">
+            <p>Login</p>
+        </div>
+        <input type="text" placeholder="Username" class="size box loc1">
+        <input type="password" placeholder="Password" class="size box loc2">
+        <button class="size" id="login_botton">Login</button>
+        <div id="text">
+            don't have an account?<span class="toSignup">signup</span>
+        </div>
+    </div>
+
+    <div id="signupBox">
+        <div class="title">
+            <p>signup</p>
+        </div>
+        <div class="information">
+            <input type="text" id="fname" placeholder="First name" class="input signup">
+            <input type="text" id="lname" placeholder="Last name" class="input signup"><br>
+            <input type="email" id="email" placeholder="Email Adress" class="input signup"><br>
+            <input type="password" id="password" placeholder="Password" class="input signup"><br>
+            <input type="password" id="cpassword" placeholder="Confirm Password" class="input signup"><br>
+            <input list="month" name="month" placeholder="Month" class="input month">
+                <datalist id="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </datalist>
+            <input type="number" id="day" placeholder="Day" class="input signup">
+            <input type="number" id="year" placeholder="Year" class="input signup"><br>
+            <input list="gender" name="gender" placeholder="Gender" class="input gender">
+                <datalist id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </datalist><br>
+            <div class="terms">
+                <label class="container x">  I accept the terms
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+            <button class="size" id="signup_botton">SignUp</button>
+        </div>
+    </div>
+</body>
+</html>
